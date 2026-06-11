@@ -1,7 +1,6 @@
 :root {
     --main-color: #474747;
-    --second-color: #b8860b;
-
+    --second-color: #778899;
 }
 
 * {
@@ -13,5 +12,33 @@
 
 html, body {
     min-height: 100vh;
+    background-color: var(--main-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 16px; 
+    margin: 20px;
+}
+
+section {
     background-color: var(--second-color);
+    border-radius: 10px;
+}
+
+.left-image {
+    position: relative;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.left-image h1 {
+    position: absolute;
+    bottom: 0;
+    color: #d3d3d3;
 }
