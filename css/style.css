@@ -1,0 +1,17 @@
+:root {
+    --main-color: #474747;
+    --second-color: #b8860b;
+
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--second-color);
+}
