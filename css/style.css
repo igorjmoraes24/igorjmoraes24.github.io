@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
 :root {
     --main-color: #474747;
     --second-color: #778899;
+    --bar-color: #4d4949;
+    --background-bar-color: #9b9a9a;
 }
 
 * {
@@ -20,11 +24,35 @@ main {
     grid-template-columns: 30% 1fr;
     gap: 16px; 
     margin: 20px;
+    font-family: "Arimo", sans-serif;
 }
 
-section {
+.left, .experiences, .training {
     background-color: var(--second-color);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.experiences, .training {
+    padding: 10px;
+}
+
+.left {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date, i {
+    color: var(--bar-color);
+}
+
+ul {
+    list-style: none;
 }
 
 .left-image {
@@ -41,4 +69,29 @@ section {
     position: absolute;
     bottom: 0;
     color: #d3d3d3;
+}
+
+.personal-infos, .skills, .languages {
+    padding: 16px;
+    line-height: 20px;
+
+}
+
+.progress {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    background-color: var(--background-bar-color);
+    transition: 100ms ease;
+    border-radius: 20px;
+}
+
+.bar {
+    border-radius: 20px;
+    height: 100%;
+    background-color: var(--bar-color);
+}
+
+.name-item {
+    font-weight: bolder;
 }
