@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --main-color: #474747;
+    --second-color: #778899;
+    --bar-color: #4d4949;
+    --background-bar-color: #9b9a9a;
+    --text-color: #222222;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--main-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 16px; 
+    margin: 20px;
+    font-family: "Arimo", sans-serif;
+}
+
+.left, .experiences, .training {
+    background-color: var(--second-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.experiences, .training {
+    padding: 10px;
+}
+
+.left {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date, i {
+    color: var(--bar-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.left-image {
+    position: relative;
+}
+
+.left-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.left-image h1 {
+    position: absolute;
+    bottom: 0;
+    color: #d3d3d3;
+}
+
+.personal-infos, .skills, .languages {
+    padding: 16px;
+    line-height: 20px;
+
+}
+
+.progress {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    background-color: var(--background-bar-color);
+    transition: 100ms ease;
+    border-radius: 20px;
+}
+
+.bar {
+    border-radius: 20px;
+    height: 100%;
+    background-color: var(--bar-color);
+}
+
+.name-item {
+    font-weight: bolder;
+}
+
+footer {
+    color: black;
+    background-color: var(--second-color);
+    font-family: "Arimo", sans-serif;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px;
+    transition: 100ms ease;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+footer a:hover{
+    color: white;
+    border: 2px solid white;
+}
