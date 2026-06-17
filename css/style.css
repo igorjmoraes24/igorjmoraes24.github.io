@@ -5,6 +5,7 @@
     --second-color: #778899;
     --bar-color: #4d4949;
     --background-bar-color: #9b9a9a;
+    --text-color: #222222;
 }
 
 * {
@@ -94,4 +95,29 @@ ul {
 
 .name-item {
     font-weight: bolder;
+}
+
+footer {
+    color: black;
+    background-color: var(--second-color);
+    font-family: "Arimo", sans-serif;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px;
+    transition: 100ms ease;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+footer a:hover{
+    color: white;
+    border: 2px solid white;
 }
