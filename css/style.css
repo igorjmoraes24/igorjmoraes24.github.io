@@ -28,6 +28,12 @@ main {
     font-family: "Arimo", sans-serif;
 }
 
+@media(max-width: 880px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
 .left, .experiences, .training {
     background-color: var(--second-color);
     border-radius: 10px;
